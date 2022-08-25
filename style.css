@@ -1,0 +1,111 @@
+body {
+  margin: 0px;
+  font-family: "Roboto Slab", Arial, sans-seriff;
+  color: #525252;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  display: flex;
+  place-content: space-between;
+  padding: 50px 140px;
+  align-items: center;
+}
+
+.headermenu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+.headermenu a {
+  text-decoration: none;
+  color: #141414;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  padding: 10px 20px;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+  header a {
+    background: #f5f5f5;
+    border-radius: 4px;
+  }
+}
+
+/* main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+} */
+
+main {
+  padding: 24px 140px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.perfil {
+  width: 360px;
+  height: 360px;
+  /* margin: 24px 140px; */
+}
+
+.introd {
+  max-width: 60ch;
+}
+
+.introd h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 1.125;
+  color: #141414;
+  position: relative;
+}
+
+.introd h1::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  background-image: url("/img/detalhe.svg");
+  width: 25px;
+  height: 25px;
+  left: -40px;
+  top: 25px;
+}
+
+.introd h2 {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 42px;
+  padding: 30px 0;
+}

@@ -176,17 +176,18 @@ section {
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 128px;
+  font-size: 8rem;
   line-height: 120px;
   color: #e0e0e0;
   text-align: center;
+  word-break: break-all;
 }
 
 #experiencia h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 72px;
+  font-size: 4.5rem;
   line-height: 90px;
   color: #141414;
   position: relative;
@@ -210,11 +211,68 @@ section {
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 32px;
   max-width: 36ch;
   padding-bottom: 60px;
 }
-strong {
+.experiencia-texto strong {
   color: #141414;
+}
+
+.projeto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 60px;
+}
+.projeto2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 60px;
+  margin-top: 30px;
+}
+
+.projeto-titulo {
+  position: relative;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 32px;
+  color: #141414;
+}
+
+.projeto-titulo::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  background-image: url("/img/detalhe.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5px;
+  height: 5px;
+  left: -10px;
+  top: 13px;
+}
+
+.projeto-data {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 32px;
+  color: #7a7a7a;
+}
+
+.empresa-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.empresa-habilidades li {
+  background: #e0e0e0;
+  color: #141414;
+  border-radius: 5px;
+  padding: 5px 10px;
 }

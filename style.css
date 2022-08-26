@@ -45,7 +45,7 @@ header {
   display: block;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   header {
     flex-direction: column;
     gap: 40px;
@@ -57,23 +57,17 @@ header {
   }
 }
 
-/* main {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-} */
-
 main {
   padding: 24px 140px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
+  gap: 140px;
 }
 
-.perfil {
-  width: 360px;
-  height: 360px;
-  /* margin: 24px 140px; */
+main img {
+  object-fit: cover;
+  height: 100%;
 }
 
 .introd {
@@ -95,6 +89,8 @@ main {
   display: flex;
   position: absolute;
   background-image: url("/img/detalhe.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 25px;
   height: 25px;
   left: -40px;
@@ -108,4 +104,117 @@ main {
   font-size: 2rem;
   line-height: 42px;
   padding: 30px 0;
+}
+
+@media (max-width: 1400px) {
+  main {
+    padding: 15px 100px;
+  }
+}
+@media (max-width: 1100px) {
+  main {
+    gap: 60px;
+    padding: 10px 60px;
+  }
+  .introd h1::before {
+    width: 20px;
+    height: 20px;
+    left: -30px;
+    top: 15px;
+  }
+  .introd h1 {
+    font-size: 3rem;
+  }
+  .introd h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 30px;
+  }
+
+  .introd h1::before {
+    width: 15px;
+    height: 15px;
+    left: -20px;
+    top: 10px;
+  }
+
+  .introd h1 {
+    font-size: 2.5rem;
+  }
+  .introd h2 {
+    font-size: 1.3rem;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 0px;
+    padding-top: 0px;
+  }
+  main img {
+    height: 75%;
+    display: flex;
+    justify-self: center;
+  }
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 155px 185px;
+  gap: 120px;
+  align-items: center;
+}
+
+.subtitulo {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 120px;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+#experiencia h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 90px;
+  color: #141414;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+#experiencia h1::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  background-image: url("/img/detalhe.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  left: -40px;
+  top: 30px;
+}
+
+.experiencia-texto {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  max-width: 36ch;
+  padding-bottom: 60px;
+}
+strong {
+  color: #141414;
 }

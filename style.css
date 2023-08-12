@@ -355,7 +355,7 @@ section {
 }
 
 #formacao .subtitulo {
-  color: #000000;
+  color: #2c2c2c;
 }
 
 #formacao h1 {
@@ -589,7 +589,7 @@ footer h2 {
 }
 
 footer h2::after {
-  content: "Calmon. Alguns direitos reservados";
+  content: "Calmon.";
   display: flex;
   position: absolute;
   font-family: "Fira Sans";

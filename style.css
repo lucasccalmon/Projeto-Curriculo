@@ -16,7 +16,6 @@ ul {
   padding: 0px;
   list-style: none;
 }
-
 img {
   max-width: 100%;
   display: block;
@@ -65,7 +64,7 @@ main {
   gap: 140px;
 }
 
-main img {
+mainimg {
   object-fit: cover;
   height: 100%;
 }
@@ -88,7 +87,7 @@ main img {
   content: "";
   display: flex;
   position: absolute;
-  background-image: url("/img/detalhe.svg");
+  background-image: url("img/detalhe.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 25px;
@@ -157,7 +156,7 @@ main img {
     gap: 0px;
     padding-top: 0px;
   }
-  main img {
+  mainimg {
     height: 75%;
     display: flex;
     justify-self: center;
@@ -199,7 +198,7 @@ section {
   content: "";
   display: flex;
   position: absolute;
-  background-image: url("/img/detalhe.svg");
+  background-image: url("img/detalhe.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 25px;
@@ -232,6 +231,12 @@ section {
   gap: 5px 60px;
   margin-top: 30px;
 }
+.projeto3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 60px;
+  margin-bottom: 30px;
+}
 
 .projeto-titulo {
   position: relative;
@@ -247,7 +252,7 @@ section {
   content: "";
   display: flex;
   position: absolute;
-  background-image: url("/img/detalhe.svg");
+  background-image: url("img/detalhe.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 5px;
@@ -372,7 +377,7 @@ section {
   content: "";
   display: flex;
   position: absolute;
-  background-image: url("/img/detalhe.svg");
+  background-image: url("img/detalhe.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 25px;
@@ -439,7 +444,7 @@ section {
   content: "";
   display: flex;
   position: absolute;
-  background-image: url("/img/detalhe.svg");
+  background-image: url("img/detalhe.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 10px;
@@ -568,7 +573,7 @@ footer li::before {
   content: "";
   display: flex;
   position: absolute;
-  background-image: url("/img/detalhe.svg");
+  background-image: url("img/detalhe.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 20px;

@@ -465,7 +465,7 @@ section {
   font-size: 18px;
   line-height: 20px;
   color: #ffffff;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
   max-width: 400px;
@@ -478,6 +478,14 @@ section {
   font-size: 18px;
   line-height: 20px;
   color: #a3a3a3;
+}
+.cursos .lang {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #5d1c90;
+  margin-bottom: 15px;
 }
 
 .formacao-tipo2 {
